@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     const QSize size(1280, 800);
     QOpenGLFramebufferObject fbo(size, QOpenGLFramebufferObject::CombinedDepthStencil);
 
-
+    // ------------------ Begin RENDER OGL SCENE HERE ------------ /
     glClear(GL_COLOR_BUFFER_BIT
           | GL_DEPTH_BUFFER_BIT
           | GL_STENCIL_BUFFER_BIT);
@@ -45,6 +45,9 @@ int main(int argc, char *argv[])
         glVertex2f(90.0f,90.0f);
         glVertex2f(90.0f,10.0f);
     glEnd();
+    
+    // ------------------ End RENDER OGL SCENE HERE ------------ /
+    
     // Write it to a file.
     context.makeCurrent(&surface);
 

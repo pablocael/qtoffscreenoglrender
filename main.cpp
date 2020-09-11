@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
     if (!context.makeCurrent(&surface))
         qFatal("makeCurrent failed");
 
+    // FBO Size will set the final image size. Modify above variable to change final render fbo buffer / image size
     const QSize size(1280, 800);
     QOpenGLFramebufferObject fbo(size, QOpenGLFramebufferObject::CombinedDepthStencil);
 

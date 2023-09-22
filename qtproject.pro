@@ -1,4 +1,4 @@
-QT       += core gui 3dcore 3dinput
+QT += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets opengl
 
